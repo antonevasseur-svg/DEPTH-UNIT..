@@ -1,0 +1,2 @@
+import { Link } from 'react-router-dom'; import { motion } from 'motion/react';
+export default function ArtistNameCloud({artists}:{artists:{id:string;name:string;slug:string}[]}){return <div className="flex flex-wrap items-center gap-x-5 gap-y-4">{artists.map((a,i)=><motion.div key={a.id} initial={{opacity:0,y:12}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:i*.03}}><Link to={`/artist/${a.slug}`} className="font-display text-3xl md:text-5xl text-white/55 hover:text-white hover:text-gradient transition-all">{a.name}</Link></motion.div>)}</div>}

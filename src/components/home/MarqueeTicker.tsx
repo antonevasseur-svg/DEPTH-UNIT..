@@ -1,0 +1,1 @@
+export default function MarqueeTicker(){return <div className="overflow-hidden border-y border-white/10 py-4"><div className="whitespace-nowrap font-mono text-[10px] tracking-[.5em] text-white/40 animate-pulse">DUB • BASS • DUBSTEP • DRUM & BASS • AMBIENT • TECHNO • ROOTS • WORLD • EXPERIMENTAL • DEPTH UNIT • </div></div>}

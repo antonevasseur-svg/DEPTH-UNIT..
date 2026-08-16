@@ -1,0 +1,2 @@
+type Props={src:string;alt:string;className?:string;aspect?:'square'|'video'};
+export default function ArtworkFrame({src,alt,className='',aspect='square'}:Props){return <div className={`relative overflow-hidden bg-white/5 ${aspect==='square'?'aspect-square':'aspect-video'} ${className}`}><img src={src} alt={alt} loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/><div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none"/></div>}
